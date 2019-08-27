@@ -1,0 +1,60 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  overflow: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  overflow: hidden;
+}
+
+::-moz-selection {
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
+.info, .contact {
+  position: absolute;
+  z-index: 9999;
+  width: 300px;
+  left: 20px;
+}
+
+.info {
+  top: 20px;
+}
+
+.contact {
+  bottom: 20px;
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
