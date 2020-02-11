@@ -38,6 +38,10 @@ a:hover {
   opacity: .5;
 }
 
+canvas {
+  filter: blur(50px);
+}
+
 .info, .contact {
   position: absolute;
   z-index: 9999;
