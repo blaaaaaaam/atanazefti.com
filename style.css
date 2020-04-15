@@ -39,7 +39,7 @@ canvas {
   top: 0;
   left: 0;
   z-index: -1;
-  filter: blur(20px);
+  filter: blur(50px);
 }
 
 .about { max-width: 30ch; }
