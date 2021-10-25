@@ -1,0 +1,30 @@
+{
+  "name": "atanazefti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blaaaaaaam/atanazefti.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blaaaaaaam/atanazefti.com/issues"
+  },
+  "homepage": "https://github.com/blaaaaaaam/atanazefti.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "prettier": "2.3.0"
+  },
+  "dependencies": {
+    "fast-glob": "^3.2.5"
+  }
+}

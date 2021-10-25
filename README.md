@@ -1,2 +1,0 @@
-# atanazefti.com
-Personal site
