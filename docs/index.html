@@ -4,14 +4,11 @@
     <meta name="viewport" content="width=device-width, height=device-height" />
 
     <title>Alexander Tanazefti</title>
-    <meta
-      name="description"
-      content="Graphic designer, director at Pari, student at Werkplaats Typografie."
-    />
+    <meta name="description" content="Graphic design and web development" />
     <meta property="og:title" content="Alexander Tanazefti" />
     <meta
       property="og:description"
-      content="Graphic designer, director at Pari, student at Werkplaats Typografie."
+      content="Graphic design and web development"
     />
     <meta
       property="og:image"
@@ -26,8 +23,6 @@
 
     <link rel="stylesheet" href="assets/styles.css" />
 
-    <script src="assets/p5.min.js"></script>
-    <script src="assets/lazyload.min.js"></script>
     <script src="assets/scripts.js"></script>
     <script
       async
@@ -43,123 +38,85 @@
     </script>
   </head>
   <body>
+    <header>
+      <h1>Alexander Tanazefti</h1>
+      <div class="email">
+        <a href="mailto:alex.tanazefti@gmail.com">alex.tanazefti@gmail.com</a>
+      </div>
+      <div class="phone"><a href="tel:+61 448 409 259">+61 448 409 259</a></div>
+    </header>
     <main>
-      <header>
-        <div class="about">
-          <h1><a href="#">Alexander Tanazefti</a></h1>
-          <p>
-            Graphic designer, director at
-            <a href="https://pariari.org" target="_blank">Pari</a>, student at
-            <a href="https://www.werkplaatstypografie.org" target="_blank"
-              >Werkplaats Typografie</a
-            >. Available for collaborations.
-          </p>
-          <a href="mailto:alex.tanazefti@gmail.com" target="_blank"
-            >alex.tanazefti@gmail.com</a
-          >
-          <p>+31 (0)6 33 33 97 52</p>
-        </div>
-      </header>
-      <section class="work">
-        <button onclick="toggle(this)">Work...</button>
-        <section class="images">
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/GR4_Poster_Final_Print.png"
-              alt=""
-            />
-          </figure>
+      <section style="background: #e12b41; color: white">
+        <figure class="col-1">
+          <img src="assets/img/gr4.png" alt="" />
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/KPAP_doit_Publication_Cover.png"
-              alt=""
-            />
-          </figure>
+          <figcaption>Garden Reflexxx Presents: 4, 2021</figcaption>
+        </figure>
+      </section>
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/KPAP_doit_Publication_work8_2-3.png"
-              alt=""
-            />
-          </figure>
+      <section style="background: #222222; color: white">
+        <figure class="col-1">
+          <img src="assets/img/doit_catalogue.png" alt="" />
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/KPAP_doit_Publication_work8_40-41.png"
-              alt=""
-            />
-          </figure>
+          <figcaption><i>do it: australia</i> catalogue, 2020</figcaption>
+        </figure>
+      </section>
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/KPAP_doit_Publication_work8_54-55.png"
-              alt=""
-            />
-          </figure>
+      <section style="background: #0000ff; color: white">
+        <figure class="col-1">
+          <img src="assets/img/ngariung.png" alt="" />
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/KPAP_doit_Publication_work8_7-8.png"
-              alt=""
-            />
-          </figure>
+          <figcaption>
+            Lettering for <i>Ngariung</i>, a Pari public program, 2021
+          </figcaption>
+        </figure>
+      </section>
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/KPAP_doit_Publication_work8_7-82.png"
-              alt=""
-            />
-          </figure>
+      <section style="background: #edd3a0; color: white">
+        <figure class="col-1">
+          <img src="assets/img/dyktf.png" alt="" />
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/KPAP_doit_Publication_work8_74-75.png"
-              alt=""
-            />
-          </figure>
+          <figcaption>
+            <i>do you know this feeling</i> exhibition catalogue, 2019
+          </figcaption>
+        </figure>
+      </section>
 
-          <figure>
-            <img class="lazy" data-src="assets/work/LS_UI_NavBar.png" alt="" />
-          </figure>
+      <section style="background: #000000; color: white">
+        <figure class="col-1">
+          <img src="assets/img/wtfc1.jpg" alt="" />
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/LUV5EVA_Logo3_Transparent.png"
-              alt=""
-            />
-          </figure>
+          <figcaption>WTFC presents: <i>Computer Chess</i>, 2021</figcaption>
+        </figure>
+      </section>
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/Tendencies_Chess_Work2.png"
-              alt=""
-            />
-          </figure>
+      <section style="background: #000000; color: white">
+        <figure class="col-1">
+          <img src="assets/img/wtfc2.jpg" alt="" />
 
-          <figure>
-            <img
-              class="lazy"
-              data-src="assets/work/Tendencies_Chess_Work2_transparent.png"
-              alt=""
-            />
-          </figure>
+          <figcaption>WTFC presents: <i>Welt Am Draht</i>, 2021</figcaption>
+        </figure>
+      </section>
 
-          <figure>
-            <img class="lazy" data-src="assets/work/WI_Print.png" alt="" />
-          </figure>
-        </section>
+      <section style="background: #000000; color: white">
+        <figure class="col-1">
+          <img src="assets/img/subtitles.png" alt="" />
+
+          <figcaption>, 2021</figcaption>
+        </figure>
       </section>
     </main>
+
+    <script>
+      const scrollContainer = document.querySelector("main");
+
+      scrollContainer.addEventListener("wheel", (evt) => {
+        if (!evt.deltaY) {
+          return;
+        }
+        evt.currentTarget.scrollLeft += evt.deltaY + evt.deltaX;
+        evt.preventDefault();
+      });
+    </script>
   </body>
 </html>

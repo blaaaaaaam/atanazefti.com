@@ -1,23 +1,32 @@
 ---
 layout: base.njk
 ---
+<header>
+  <h1>{{ title }}</h1>
+  <div class="email"><a href="mailto:{{email}}">{{email}}</a></div>
+  <div class="phone"><a href="tel:{{phone}}">{{phone}}</a></div>
+</header>
 <main>
-  <header>
-    <div class="about">
-      <h1><a href="#">Alexander Tanazefti</a></h1>
-      <p>Graphic designer, director at <a href="https://pariari.org" target="_blank">Pari</a>, student at <a href="https://www.werkplaatstypografie.org" target="_blank">Werkplaats Typografie</a>. Available for collaborations.</p>
-      <a href="mailto:alex.tanazefti@gmail.com" target="_blank">alex.tanazefti@gmail.com</a>
-      <p>+31 (0)6 33 33 97 52</p>
-    </div>
-  </header>
-  <section class="work">
-    <button onclick="toggle(this)">Work...</button>
-    <section class="images">
-      {% for image in collections.work|sort %}
-      <figure>
-        <img class="lazy" data-src="{{ image.slice(4) }}" alt="">
-      </figure>
+  {% for work in collections.work %}
+  <section style="background:{{ work.data.background }};color:{{ work.data.colour }}">
+    <figure class="col-{{ work.data.images.length }}">
+      {% for image in work.data.images %}
+        <img src="assets/img/{{ image }}" alt="">
       {% endfor %}
-    </section>
+      <figcaption>{{ work.data.title | safe }}, {{ work.data.year }}</figcaption>
+    </figure>
   </section>
+  {% endfor %}
 </main>
+
+<script>
+  const scrollContainer = document.querySelector('main')
+
+  scrollContainer.addEventListener('wheel', (evt) => {
+    if (!evt.deltaY) {
+      return
+    }
+    evt.currentTarget.scrollLeft += evt.deltaY + evt.deltaX;
+    evt.preventDefault();
+  })
+</script>
